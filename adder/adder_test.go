@@ -36,3 +36,15 @@ func assertCorrectInt(t testing.TB, got, want int) {
 		t.Errorf("expected %d got %d", want, got)
 	}
 }
+
+func ExampleAdd() {
+	sum := Add(1, 5)
+	fmt.Println(sum)
+	// Output: 6
+}
+
+func ExampleAdd_second() {
+	sum := Add(-32, -2)
+	fmt.Println(sum)
+	// Output: -34
+}
